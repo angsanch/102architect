@@ -65,7 +65,7 @@ class Matrix:
         return Matrix(self.height, this.width, result)
 
     def __repr__(self):
-        lines = ["\t".join([f"{0 if round(j, 3) == 0 else j:.2f}" for j in i])
+        lines = ["\t".join([f"{0 if round(j, 2) == 0 else j:.2f}" for j in i])
             for i in self.matrix]
         return "\n".join(lines)
 
